@@ -21,8 +21,8 @@ def encodeString(stringVal):
 
 def decodeString(encodedList):
     decodedStr = ''
-    for item in encodedList:
-        decodedStr = decodedStr + item[0] * item[1]
+    for key, val in encodedList:
+        decodedStr = decodedStr + key * val
     return decodedStr
 
 # Test encodeString function
