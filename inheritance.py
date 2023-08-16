@@ -3,7 +3,7 @@
 # Parent Class
 class Dog:
     _legs = 4
-    
+
     def __init__(self, name):
         self.name = name
 
@@ -13,7 +13,7 @@ class Dog:
     def getLegs(self):
         return self._legs
 
-# Child Class  
+# Child Class
 class Chihuahua(Dog):
     # Parent class speak method overridden in child class
     def speak(self):
@@ -36,7 +36,7 @@ class UniqueList(list):
     def __init__(self):
         super().__init__(self)
         self.someProperty = 'Unique List!'
-    
+
     def append(self, item):
         if item in self:
             return
@@ -52,3 +52,4 @@ uniqueList.append(2)
 uniqueList.append(3)
 
 print(uniqueList)
+print(uniqueList.someProperty)
